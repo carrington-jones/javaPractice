@@ -17,6 +17,18 @@ public class JavaArraysPractice {
         int numbersZombiesHATE[] = {4, 90, 70, 123, 12, 4, 561, 1};
         System.out.println(numbersZombiesHATE[6]);
 
+        double[] prices;
+        prices = new double [4];
+
+        int [] numbers = new int[3];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 75;
+
+        System.out.println(numbers[0]);
+        System.out.println(numbers[1]);
+        System.out.println(numbers[2]);
+        System.out.println(numbers[3]);
     }
 
 }
