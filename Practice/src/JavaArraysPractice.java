@@ -28,7 +28,7 @@ public class JavaArraysPractice {
         System.out.println(numbers[0]);
         System.out.println(numbers[1]);
         System.out.println(numbers[2]);
-        System.out.println(numbers[3]);
+        System.out.println(numbers[3]); //Throws an error because there is not a fourth element in the array.
     }
 
 }
