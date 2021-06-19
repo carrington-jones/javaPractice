@@ -26,18 +26,33 @@ public class HackerRankPractice {
 //
 //        scanner.close();
 
-        Scanner scan = new Scanner(System.in);
-        int i = scan.nextInt();
-        scan.nextLine();
-        double d = scan.nextDouble();
-        scan.nextLine();
-        String s = scan.nextLine();
+//        Scanner scan = new Scanner(System.in);
+//        int i = scan.nextInt();
+//        scan.nextLine();
+//        double d = scan.nextDouble();
+//        scan.nextLine();
+//        String s = scan.nextLine();
+//
+//         Write your code here.
+//
+//        System.out.println("String: " + s);
+//        System.out.println("Double: " + d);
+//        System.out.println("Int: " + i);
 
-        // Write your code here.
 
-        System.out.println("String: " + s);
-        System.out.println("Double: " + d);
-        System.out.println("Int: " + i);
+//        Scanner sc=new Scanner(System.in);
+//        System.out.println("================================");
+//        for(int i=0;i<3;i++){
+//            String s1=sc.next();
+//            String x=sc.nextLine();
+//            System.out.printf("%s %s%n",s1,x);
+            //Complete this line
+//        }
+//        System.out.println("================================");
+
+        for (int i = 0; i <= 10;i++){
+            System.out.println("2 x " + i + " = " + (2*i));
+        }
     }
 }
 
