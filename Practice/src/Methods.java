@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Methods {
 
-    public static int countAs(String userString){
+    public static int countAs(String userString) {
         int count = 0;
         for (int i = 0; i < userString.length(); i++) {
             char ch = userString.charAt(i);
@@ -14,7 +14,7 @@ public class Methods {
 
     }
 
-    public static int countEs(String userString){
+    public static int countEs(String userString) {
         int count = 0;
         for (int i = 0; i < userString.length(); i++) {
             char ch = userString.charAt(i);
@@ -25,7 +25,7 @@ public class Methods {
         return count;
     }
 
-    public static int countIs(String userString){
+    public static int countIs(String userString) {
         int count = 0;
         for (int i = 0; i < userString.length(); i++) {
             char ch = userString.charAt(i);
@@ -36,7 +36,7 @@ public class Methods {
         return count;
     }
 
-    public static int countOs(String userString){
+    public static int countOs(String userString) {
         int count = 0;
         for (int i = 0; i < userString.length(); i++) {
             char ch = userString.charAt(i);
@@ -47,7 +47,7 @@ public class Methods {
         return count;
     }
 
-    public static int countUs(String userString){
+    public static int countUs(String userString) {
         int count = 0;
         for (int i = 0; i < userString.length(); i++) {
             char ch = userString.charAt(i);
@@ -67,8 +67,25 @@ public class Methods {
         int numberOfUs = countUs(userString);
         System.out.println(numberOfAs + "A(s) in your String\n" + numberOfEs + "E(s) in your String\n" + numberOfIs + "I(s) in your String\n" + numberOfOs + "O(s) in your String\n" + numberOfUs + "U(s) in your String");
     }
-    public static void main(String[] args) {
-        countVowels("Watermelon");
 
+
+    //    Create a method that will return how many capital letters are in a string.
+    public static void countUpperAndLower(String userString) {
+        int upperCase = 0;
+        int lowerCase = 0;
+        for (int k = 0; k < userString.length(); k++) {
+            // Check for uppercase letters.
+            if (Character.isUpperCase(userString.charAt(k))) upperCase++;
+
+            // Check for lowercase letters.
+            if (Character.isLowerCase(userString.charAt(k))) lowerCase++;
+        }
+        System.out.printf("There are %d uppercase letters and %d lowercase letters.", upperCase, lowerCase);
+    }
+
+    public static void main(String[] args) {
+//        countVowels("Watermelon");
+        countUpperAndLower("wAtErmEllOn");
     }
 }
+
