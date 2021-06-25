@@ -84,7 +84,7 @@ public class Methods {
     }
 
     public static void main(String[] args) {
-//        countVowels("Watermelon");
+        countVowels("Watermelon");
         countUpperAndLower("wAtErmEllOn");
     }
 }
