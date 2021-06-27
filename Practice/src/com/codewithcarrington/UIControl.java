@@ -1,18 +1,20 @@
 package com.codewithcarrington;
 
-public class UIControl {
+public abstract class UIControl {
+
+    private boolean isEnabled = true;
+
     public boolean isEnabled() {
         return isEnabled;
     }
 
-    public UIControl(boolean isEnabled) {
-        this.isEnabled = isEnabled;
-        System.out.println("UIControl");
-    }
+//    public UIControl(boolean isEnabled) {
+//        this.isEnabled = isEnabled;
+//    }
 
-    private boolean isEnabled = true;
+public abstract void render();
 
-    public void enable(){
+    public final void enable(){ //Cannot override final methods. Not used often.
         isEnabled = true;
     }
 

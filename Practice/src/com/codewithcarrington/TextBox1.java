@@ -4,9 +4,20 @@ package com.codewithcarrington;
 public class TextBox1 extends UIControl {
 private String text = "";
 
-    public TextBox1() {
-        super(true);//Required since UI control has boolean parameters.
-        System.out.println("TextBox");
+//    public TextBox1() {
+//        super(true);//Required since UI control has boolean parameters.
+//        System.out.println("TextBox");
+//    }
+
+
+    @Override
+    public void render() {
+        System.out.println("Render TextBox");
+    }
+
+    @Override
+    public String toString() {
+        return text;
     }
 
     public void setText(String text) {

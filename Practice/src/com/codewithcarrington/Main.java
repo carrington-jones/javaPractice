@@ -119,5 +119,38 @@ public class Main {
 //        System.out.print("Age: ");
 //        byte age = scanner.nextByte();
 //        System.out.println("You are " + age);
+
+        //-----Method Overriding-----// Overwrote to String method in TextBox1 class
+//        var textBox = new TextBox1();
+//        textBox.setText("Hello World!");
+//        System.out.println(textBox);
+
+        //-----Upcasting and Downcasting-----//
+//        var control = new UIControl(true);
+//        var textBox = new TextBox1();
+//        show(control);
+
+        //-----Comparing Objects-----//
+//        var point1 = new Point(1, 2);
+//        var point2 = new Point(1, 2);
+//        System.out.println(point1.equals(point2));
+//        System.out.println(point1.hashCode());
+//        System.out.println(point2.hashCode());
+
+        //-----Polymorphism-----//
+        UIControl[] controls = {new TextBox1(), new CheckBox()}; //We generated render methods in TextBox1 and ChcekBox classes.
+        for (var control : controls) {
+            control.render();
+        }
+
     }
+
+
+
+    //-----Upcasting and Downcasting-----//
+//    public static void show(UIControl control){
+//        var textBox = (TextBox1) control;
+//        textBox.setText("Hello World!");
+//        System.out.println(control);
+
 }
