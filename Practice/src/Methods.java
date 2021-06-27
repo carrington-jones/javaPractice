@@ -80,12 +80,20 @@ public class Methods {
             // Check for lowercase letters.
             if (Character.isLowerCase(userString.charAt(k))) lowerCase++;
         }
-        System.out.printf("There are %d uppercase letters and %d lowercase letters.", upperCase, lowerCase);
+        System.out.printf("There are %d uppercase letters and %d lowercase letters.%n", upperCase, lowerCase);
+    }
+
+//    Write a method named firstChar() that takes a string as an input and returns the first letter as a character data type.
+
+    public static void getFirstCharacter(String userInput){
+        char FirstChar = userInput.charAt(0);
+        System.out.println(FirstChar);
     }
 
     public static void main(String[] args) {
         countVowels("Watermelon");
         countUpperAndLower("wAtErmEllOn");
+        getFirstCharacter("Codeup");
     }
 }
 
