@@ -138,10 +138,13 @@ public class Main {
 //        System.out.println(point2.hashCode());
 
         //-----Polymorphism-----//
-        UIControl[] controls = {new TextBox1(), new CheckBox()}; //We generated render methods in TextBox1 and ChcekBox classes.
-        for (var control : controls) {
-            control.render();
-        }
+//        UIControl[] controls = {new TextBox1(), new CheckBox()}; //We generated render methods in TextBox1 and ChcekBox classes.
+//        for (var control : controls) {
+//            control.render();
+//        }
+        var calculator = new TaxCalculator2021(1000);
+        var report = new TaxReport(calculator);
+
 
     }
 
