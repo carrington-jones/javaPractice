@@ -143,7 +143,11 @@ public class Main {
 //            control.render();
 //        }
         var calculator = new TaxCalculator2021(1000);
-        var report = new TaxReport(calculator);
+        var report = new TaxReport();
+        report.show(calculator);
+
+//        report.setCalculator(new TaxCalculator2022());
+        report.show(new TaxCalculator2022());
 
 
     }
