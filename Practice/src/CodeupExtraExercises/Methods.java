@@ -1,3 +1,5 @@
+package CodeupExtraExercises;
+
 import java.util.Scanner;
 
 public class Methods {
@@ -96,4 +98,6 @@ public class Methods {
         getFirstCharacter("Codeup");
     }
 }
+
+
 
