@@ -2,6 +2,7 @@ package com.codewithcarrington.Generics;
 
 import java.util.Iterator;
 
+
 public class GenericList<T> implements Iterable<T> { //T represents template. It represents types of objects we want to store. Such as User, Int, or String. Classes can have parameters similar to methods.
     private T[] items = (T[]) new Object[10];
     private int count;
@@ -38,4 +39,6 @@ public class GenericList<T> implements Iterable<T> { //T represents template. It
             return list.items[index++];
         }
     }
+
+
 }
