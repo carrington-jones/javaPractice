@@ -24,5 +24,9 @@ public class CollectionsMain {
         Collections.sort(customers);
         System.out.println(customers);
 
+        //EmailComparator.java class (Comparator Interface) This sort array list by emails.
+        Collections.sort(customers, new EmailComparator());
+        System.out.println(customers);
+
     }
 }
