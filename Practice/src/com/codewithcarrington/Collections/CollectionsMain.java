@@ -1,7 +1,5 @@
 package com.codewithcarrington.Collections;
 
-import com.codewithcarrington.Generics.GenericList;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -20,9 +18,9 @@ public class CollectionsMain {
 
         //Comparable Interface (uses Customer.java)
         List<Customer> customers = new ArrayList<>();
-        customers.add(new Customer("b"));
-        customers.add(new Customer("a"));
-        customers.add(new Customer("c"));
+        customers.add(new Customer("b", "e3"));
+        customers.add(new Customer("a", "e2"));
+        customers.add(new Customer("c", "e1"));
         Collections.sort(customers);
         System.out.println(customers);
 
