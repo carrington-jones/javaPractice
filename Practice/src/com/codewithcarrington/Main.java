@@ -36,13 +36,13 @@ public class Main {
 //        System.out.println(point2);
 
         //-----Strings-----//
-//        String message = "  Hello World" + "!!  ";
+        String message = "  Hello World" + "!!  ";
 //
 //        System.out.println(message.startsWith("!!"));
 //        System.out.println(message.length());
 //        System.out.println(message.indexOf("o"));//Will only return the first occurrence of character. If character does not exist it will return -1
 //        System.out.println(message.replace("!","*"));//Does not modify original string. Prints new string.
-//        System.out.println(message);
+        System.out.println(message);
 //        System.out.println(message.toLowerCase());
 //        System.out.println(message);
 //        System.out.println(message.toUpperCase());
@@ -142,12 +142,12 @@ public class Main {
 //        for (var control : controls) {
 //            control.render();
 //        }
-        var calculator = new TaxCalculator2021(1000);
-        var report = new TaxReport();
-        report.show(calculator);
+//        var calculator = new TaxCalculator2021(1000);
+//        var report = new TaxReport();
+//        report.show(calculator);
 
 //        report.setCalculator(new TaxCalculator2022());
-        report.show(new TaxCalculator2022());
+//        report.show(new TaxCalculator2022());
 
 
     }
