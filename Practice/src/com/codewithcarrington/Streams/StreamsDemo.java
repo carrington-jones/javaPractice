@@ -22,6 +22,7 @@ public class StreamsDemo {
         var count2 = movies.stream().filter(movie -> movie.getLikes() > 10).count();
     }
 
+    // This method returns a b c.
     public static void show2() {
         List<Movie> movies = List.of(
                 new Movie("a", 10),
@@ -43,5 +44,40 @@ public class StreamsDemo {
         stream.flatMap(list -> list.stream())
                 .forEach(n -> System.out.println(n));
     }
+
+
+    //This method returns unique or distince values
+    public static void show4(){
+        List<Movie> movies = List.of(
+                new Movie("a", 10),
+                new Movie("a", 10),
+                new Movie("b", 15),
+                new Movie("c", 20)
+        );
+
+        movies.stream()
+                .map(Movie::getLikes)
+                .distinct()
+                .forEach(like-> System.out.println(like));
+    }
+
+    //Peeking elements
+    public static void show5() {
+        List<Movie> movies = List.of(
+                new Movie("a", 10),
+                new Movie("b", 20),
+                new Movie("c", 30)
+        );
+
+        movies.stream()
+                .filter(m -> m.getLikes() > 10)
+                .peek(m -> System.out.println("filtered: " + m.getTitle()))
+                .map(m -> m.getTitle())
+                .peek(t -> System.out.println("map" + t))
+                .forEach(t -> System.out.println(t));
+    }
+
+
+
 
 }
