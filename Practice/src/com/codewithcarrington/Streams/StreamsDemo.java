@@ -1,6 +1,7 @@
 package com.codewithcarrington.Streams;
 
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamsDemo {
@@ -30,7 +31,7 @@ public class StreamsDemo {
                 new Movie("c", 20)
         );
 
-        movies.stream().map(movie-> movie.getTitle()).forEach(name -> System.out.println(name));
+        movies.stream().map(movie -> movie.getTitle()).forEach(name -> System.out.println(name));
     }
 
     //With this flatmap method we can flatten a stream list of objects to a stream of objects. Stream<List<x>> to Stream<x>
@@ -47,7 +48,7 @@ public class StreamsDemo {
 
 
     //This method returns unique or distince values
-    public static void show4(){
+    public static void show4() {
         List<Movie> movies = List.of(
                 new Movie("a", 10),
                 new Movie("a", 10),
@@ -58,7 +59,7 @@ public class StreamsDemo {
         movies.stream()
                 .map(Movie::getLikes)
                 .distinct()
-                .forEach(like-> System.out.println(like));
+                .forEach(like -> System.out.println(like));
     }
 
     //Peeking elements
@@ -77,7 +78,35 @@ public class StreamsDemo {
                 .forEach(t -> System.out.println(t));
     }
 
+    public static void show6() {
+        List<Movie> movies = List.of(
+                new Movie("a", 10),
+                new Movie("b", 20),
+                new Movie("c", 30)
+        );
+        //Returns a List of Movies
+        var result = movies.stream()
+                .filter(m -> m.getLikes() > 10)
+                .collect(Collectors.toList());
+        //Returns a hashMap
+        //key (title)
+        //value(likes)
+        var result2 = movies.stream()
+                .filter(m -> m.getLikes() > 10)
+                .collect(Collectors.toMap(m -> m.getTitle(), m -> m.getLikes()));
+        System.out.println(result2);
+    }
 
-
+    //This method show which movies you have by genre
+    public static void show7() {
+        List<Movie> movies = List.of(
+                new Movie("a", 10, Genre.THRILLER),
+                new Movie("b", 20, Genre.ACTION),
+                new Movie("c", 30, Genre.ACTION)
+        );
+        var result = movies.stream()
+                .collect(Collectors.groupingBy(Movie::getGenre));
+        System.out.println(result);
+    }
 
 }
