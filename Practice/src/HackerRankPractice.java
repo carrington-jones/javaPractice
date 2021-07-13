@@ -48,7 +48,7 @@ public class HackerRankPractice {
 //            String s1=sc.next();
 //            String x=sc.nextLine();
 //            System.out.printf("%s %s%n",s1,x);
-            //Complete this line
+        //Complete this line
 //        }
 //        System.out.println("================================");
 
@@ -92,13 +92,31 @@ public class HackerRankPractice {
 //     *  2. INTEGER day
 //     *  3. INTEGER year
 //     */
-        System.out.println(findDay(10,23,1989));
+        //System.out.println(findDay(10,23,1989));
+        //}
+
+//    public static String findDay(int month, int day, int year) {
+//        return LocalDate.of(year, month, day).getDayOfWeek().name();
+//    }
+
+
+        //You are given an integer n, you have to convert it into a string.
+        //
+        //Please complete the partially completed code in the editor. If your code successfully converts n into a string s the code will print "Good job". Otherwise it will print "Wrong answer".
+        //
+        // n can range between -100 to 100 inclusive.
+
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        if(n<=100 && n>=-100){
+            String testString = Integer.toString(n);
+            if (testString instanceof String){
+                System.out.println("Good job");
+            } else {
+                System.out.println("Wrong answer");
+            }
+        }
 
     }
-
-    public static String findDay(int month, int day, int year) {
-        return LocalDate.of(year, month, day).getDayOfWeek().name();
-    }
-
 }
 
