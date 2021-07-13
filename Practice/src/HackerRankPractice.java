@@ -106,17 +106,34 @@ public class HackerRankPractice {
         //
         // n can range between -100 to 100 inclusive.
 
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        if(n<=100 && n>=-100){
-            String testString = Integer.toString(n);
-            if (testString instanceof String){
-                System.out.println("Good job");
-            } else {
-                System.out.println("Wrong answer");
-            }
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        int n = scanner.nextInt();
+//        if(n<=100 && n>=-100){
+//            String testString = Integer.toString(n);
+//            if (testString instanceof String){
+//                System.out.println("Good job");
+//            } else {
+//                System.out.println("Wrong answer");
+//            }
+//        }
 
+
+        Scanner scanner = new Scanner(System.in);
+        String A = scanner.nextLine();
+        String B = scanner.nextLine();
+        int count = 0;
+        int count2 = 0;
+        for (int i = 0; i < A.length(); i++) {
+            if (A.charAt(i) != ' ')
+                count++;
+        }
+        for (int i = 0; i < B.length(); i++) {
+            if (B.charAt(i) != ' ')
+                count2++;
+        }
+        System.out.println(count + count2);
     }
+
 }
+
 
