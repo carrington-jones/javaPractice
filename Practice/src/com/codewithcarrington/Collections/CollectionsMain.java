@@ -32,5 +32,11 @@ public class CollectionsMain {
         queue.add("a");
         queue.add("b");
         System.out.println(queue);
+
+        Queue<String> queue2 = new ArrayDeque<>();
+        queue2.add("d");
+        queue2.add("e");
+        queue2.add("f");
+        System.out.println(queue2);
     }
 }
