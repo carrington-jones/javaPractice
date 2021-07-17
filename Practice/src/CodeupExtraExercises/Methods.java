@@ -92,11 +92,19 @@ public class Methods {
         System.out.println(FirstChar);
     }
 
+    public static void getSecondCharacter(String userInput){
+        char secondChar = userInput.charAt(1);
+        System.out.println(secondChar);
+    }
+
     public static void main(String[] args) {
         countVowels("Watermelon");
         countUpperAndLower("wAtErmEllOn");
         getFirstCharacter("Codeup");
+        getSecondCharacter("Codeup");
     }
+
+
 }
 
 
