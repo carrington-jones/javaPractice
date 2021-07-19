@@ -97,11 +97,23 @@ public class Methods {
         System.out.println(secondChar);
     }
 
+    public static void getLastCharacter(String userInput){
+        char lastchar = userInput.charAt(userInput.length() - 1);
+        System.out.println(lastchar);
+    }
+
+    public static void getSecondLastCharacter(String userInput){
+        char secondLastChar = userInput.charAt(userInput.length() - 2);
+        System.out.println(secondLastChar);
+    }
+
     public static void main(String[] args) {
         countVowels("Watermelon");
         countUpperAndLower("wAtErmEllOn");
         getFirstCharacter("Codeup");
         getSecondCharacter("Codeup");
+        getLastCharacter("Codeup");
+        getSecondLastCharacter("Codeup");
     }
 
 
