@@ -117,23 +117,43 @@ public class HackerRankPractice {
 //            }
 //        }
 
+//        Scanner scanner = new Scanner(System.in);
+//        String A = scanner.nextLine();
+//        String B = scanner.nextLine();
+//        int count = 0;
+//        int count2 = 0;
+//        for (int i = 0; i < A.length(); i++) {
+//            if (A.charAt(i) != ' ')
+//                count++;
+//        }
+//        for (int i = 0; i < B.length(); i++) {
+//            if (B.charAt(i) != ' ')
+//                count2++;
+//        }
+//        System.out.println(count + count2);
 
-        Scanner scanner = new Scanner(System.in);
-        String A = scanner.nextLine();
-        String B = scanner.nextLine();
-        int count = 0;
-        int count2 = 0;
-        for (int i = 0; i < A.length(); i++) {
-            if (A.charAt(i) != ' ')
-                count++;
+//        There are three lines of output:
+//        For the first line, sum the lengths of A and B.
+//        For the second line, write Yes if A is lexicographically greater than B otherwise print No instead.
+//        For the third line, capitalize the first letter in both A and B and print them on a single line, separated by a space.
+
+        Scanner sc = new Scanner(System.in);
+        String A = sc.next();
+        String B = sc.next();
+        int add = A.length() + B.length();
+        System.out.println(add);
+        int lex = (A.compareTo(B));
+        if (lex > 0) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
         }
-        for (int i = 0; i < B.length(); i++) {
-            if (B.charAt(i) != ' ')
-                count2++;
-        }
-        System.out.println(count + count2);
+        String firstWord = A.substring(0, 1).toUpperCase() + A.substring(1);
+        String secondWord = B.substring(0, 1).toUpperCase() + B.substring(1);
+        System.out.println(firstWord + " " + secondWord);
     }
-
 }
+
+
 
 

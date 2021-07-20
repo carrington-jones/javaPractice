@@ -114,10 +114,25 @@ public class Methods {
         getSecondCharacter("Codeup");
         getLastCharacter("Codeup");
         getSecondLastCharacter("Codeup");
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        int add = A.length() + B.length();
+        System.out.println(add);
+        int lex = (A.compareTo(B));
+        if(lex > 0){
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+        String firstWord = A.substring(0,1).toUpperCase() + A.substring(1);
+        String secondWord = B.substring(0,1).toUpperCase() + B.substring(1);
+        System.out.println(firstWord + " " + secondWord);
+    }
     }
 
 
-}
+
 
 
 
