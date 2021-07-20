@@ -137,22 +137,43 @@ public class HackerRankPractice {
 //        For the second line, write Yes if A is lexicographically greater than B otherwise print No instead.
 //        For the third line, capitalize the first letter in both A and B and print them on a single line, separated by a space.
 
-        Scanner sc = new Scanner(System.in);
-        String A = sc.next();
-        String B = sc.next();
-        int add = A.length() + B.length();
-        System.out.println(add);
-        int lex = (A.compareTo(B));
-        if (lex > 0) {
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
+//        Scanner sc = new Scanner(System.in);
+//        String A = sc.next();
+//        String B = sc.next();
+//        int add = A.length() + B.length();
+//        System.out.println(add);
+//        int lex = (A.compareTo(B));
+//        if (lex > 0) {
+//            System.out.println("Yes");
+//        } else {
+//            System.out.println("No");
+//        }
+//        String firstWord = A.substring(0, 1).toUpperCase() + A.substring(1);
+//        String secondWord = B.substring(0, 1).toUpperCase() + B.substring(1);
+//        System.out.println(firstWord + " " + secondWord);
+
+//        You are given an interface AdvancedArithmetic which contains a method signature int divisor_sum(int n). You need to write a class called MyCalculator which implements the interface.
+//        divisorSum function just takes an integer as input and return the sum of all its divisors. For example divisors of 6 are 1, 2, 3 and 6, so divisor_sum should return 12. The value of n will be at most 1000.
+//        Read the partially completed code in the editor and complete it. You just need to write the MyCalculator class only. Your class shouldn't be public.
+//        class MyCalculator implements AdvancedArithmetic {
+//            public int divisor_sum(int n) {
+//                int s = 1;
+//                int f = 0;
+//                int v = 0;
+//                while (s <= n) {
+//                    if (n % s == 0) {
+//                        f = s;
+//                        v += f;
+//                    }
+//                    s++;
+//
+//                }
+//                return v;
+//            }
+
         }
-        String firstWord = A.substring(0, 1).toUpperCase() + A.substring(1);
-        String secondWord = B.substring(0, 1).toUpperCase() + B.substring(1);
-        System.out.println(firstWord + " " + secondWord);
     }
-}
+
 
 
 
