@@ -1,3 +1,5 @@
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Scanner;
 import java.util.Calendar;
 import java.time.LocalDate;
@@ -170,6 +172,38 @@ public class HackerRankPractice {
 //                }
 //                return v;
 //            }
+
+//        Given a double-precision number,payment, denoting an amount of money, use the NumberFormat class' getCurrencyInstance method to convert payment into the US, Indian, Chinese, and French currency formats. Then print the formatted values as follows:
+//
+//        US: formattedPayment
+//        India: formattedPayment
+//        China: formattedPayment
+//        France: formattedPayment
+//        where formattedPayment  is payment  formatted according to the appropriate Locale's currency.
+//
+
+//        Scanner scanner = new Scanner(System.in);
+//        double payment = scanner.nextDouble();
+//        scanner.close();
+//
+//        NumberFormat nF1 = NumberFormat.getCurrencyInstance(Locale.US);
+//        String us = nF1.format(payment);
+//
+//        NumberFormat nF2 = NumberFormat.getInstance(new Locale("hi", "IN"));
+//        String india = nF2.format(payment);
+//
+//        NumberFormat nF3 = NumberFormat.getCurrencyInstance(Locale.CHINA);
+//        String china = nF3.format(payment);
+//
+//        NumberFormat nF4 = NumberFormat.getCurrencyInstance(Locale.FRANCE);
+//        String france = nF4.format(payment);
+//
+//        System.out.println("US: " + us);
+//        System.out.println("India: " + india);
+//        System.out.println("China: " + china);
+//        System.out.println("France: " + france);
+
+
 
         }
     }
