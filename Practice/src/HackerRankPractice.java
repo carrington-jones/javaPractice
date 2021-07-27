@@ -203,7 +203,23 @@ public class HackerRankPractice {
 //        System.out.println("China: " + china);
 //        System.out.println("France: " + france);
 
+//      This means that a Bird object has all the properties that an Animal object has, as well as some additional unique properties.
+//      The code above is provided for you in your editor. You must add a sing method to the Bird class, then modify the main method accordingly so that the code prints the following lines:
+//      I am walking
+//      I am flying
+//      I am singing
 
+//        class Bird extends Animal
+//        {
+//            void fly()
+//            {
+//                System.out.println("I am flying");
+//            }
+//            void sing()
+//            {
+//                System.out.println("I am singing");
+//            }
+//        }
 
         }
     }
