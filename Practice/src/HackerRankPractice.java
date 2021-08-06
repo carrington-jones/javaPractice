@@ -246,6 +246,24 @@ public class HackerRankPractice {
 //                System.out.println("My ancestor is a cycle who is " + temp);
 //            }
 //        }
+
+//        Given a string, s , and two indices, start  and end, print a substring consisting of all characters in the inclusive range from start to end -1. You'll find the String class' substring method helpful in completing this challenge.
+//            Sample Input:
+//            Hello World
+//            3 7
+//            Sample Output:
+//            lowo
+
+//        public static void main(String[] args) {
+//            Scanner in = new Scanner(System.in);
+//            String S = in.next();
+//            int start = in.nextInt();
+//            int end = in.nextInt();
+//            String newString = S.substring(start, end);
+//            System.out.println(newString);
+//        }
+
+
     }
 }
 
