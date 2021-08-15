@@ -6,4 +6,8 @@ public class Person {
     public Person(String person) {
         this.person = person;
     }
+
+    public Person() {
+
+    }
 }
