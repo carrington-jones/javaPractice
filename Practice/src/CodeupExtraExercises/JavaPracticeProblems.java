@@ -2,7 +2,7 @@ package CodeupExtraExercises;
 
 public class JavaPracticeProblems {
     public static void main(String[] args) {
-
+        System.out.println(isPalindrome("racecar"));
 
     }
 
@@ -10,7 +10,7 @@ public class JavaPracticeProblems {
 //    Write a method that detects if a string is a palindrome.
 
 //    SOLUTION:
-public boolean isPalindrome(String word) {
+public static boolean isPalindrome(String word) {
     int i1 = 0;
     int i2 = word.length() - 1;
     while (i2 > i1) {
