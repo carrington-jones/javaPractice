@@ -13,15 +13,19 @@ public class JavaPracticeProblems {
 //            test(100000);
 
         //PROBLEM 3
-        int[] v = new int[] {5, 7, 1, 2, 8, 4, 3};
-        int[] test = new int[] {3, 20, 1, 2, 7};
+//        int[] v = new int[] {5, 7, 1, 2, 8, 4, 3};
+//        int[] test = new int[] {3, 20, 1, 2, 7};
+//
+//        for(int i = 0; i < test.length; i++){
+//            boolean output = findSumOfTwo(v, test[i]);
+//            System.out.println("findSumOfTwo(v, " + test[i] + ") = " + (output ? "true" : "false"));
+//        }
 
-        for(int i = 0; i < test.length; i++){
-            boolean output = findSumOfTwo(v, test[i]);
-            System.out.println("findSumOfTwo(v, " + test[i] + ") = " + (output ? "true" : "false"));
-        }
+
 
     }
+
+    //*****PROBLEM1*****
 
 //    A palindrome is a word which reads the same backward or forward. 'abcba' is a palindrome.
 //    Write a method that detects if a string is a palindrome.
@@ -40,6 +44,7 @@ public class JavaPracticeProblems {
 //    return true;
 
 
+    //*****PROBLEM2*****
 //    You are given an array of positive numbers from 1 to n, such that all numbers from 1 to n are present except one number ‘x’. You have to find ‘x’. The input array is not sorted.
 
 //    static int find_missing(List<Integer> input) {
@@ -71,21 +76,23 @@ public class JavaPracticeProblems {
 //        System.out.println("Missing Element == Actual Missing : "+ (missing_element == actual_missing));
 //    }
 
-
+    //*****PROBLEM3*****
 //    Given an array of integers and a value, determine if there are any two integers in the array whose sum is equal to the given value.
 //    Return true if the sum exists and return false if it does not.
 
-    static boolean findSumOfTwo(int[] A, int val) {
-        Set<Integer> foundValues = new HashSet<Integer>();
-        for (int a : A) {
-            if (foundValues.contains(val - a)) {
-                return true;
-            }
+//    static boolean findSumOfTwo(int[] A, int val) {
+//        Set<Integer> foundValues = new HashSet<Integer>();
+//        for (int a : A) {
+//            if (foundValues.contains(val - a)) {
+//                return true;
+//            }
+//
+//            foundValues.add(a);
+//        }
+//        return false;
+//    }
 
-            foundValues.add(a);
-        }
-        return false;
-    }
+
 }
 
 
