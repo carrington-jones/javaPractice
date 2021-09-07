@@ -4,8 +4,8 @@ public class Shoe extends Product{
     public String brand;
     public String shoeType;
 
-    public Shoe(double price, String name, double cost, String type, String brand, String shoeType) {
-        super(price, name, cost, type);
+    public Shoe(String name, double price, String type, String brand, String shoeType) {
+        super(name, price, type);
         this.brand = brand;
         this.shoeType = shoeType;
     }

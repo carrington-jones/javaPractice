@@ -1,21 +1,13 @@
 package Company;
 
 public class Product {
-    protected double price;
     protected String name;
-    protected double cost;
+    protected double price;
     protected String type;
 
-    public Product(double price, String name, double cost) {
-        this.price = price;
+    public Product(String name, double price, String type) {
         this.name = name;
-        this.cost = cost;
-    }
-
-    public Product(double price, String name, double cost, String type) {
         this.price = price;
-        this.name = name;
-        this.cost = cost;
         this.type = type;
     }
 
@@ -37,14 +29,6 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public double getCost() {
-        return cost;
-    }
-
-    public void setCost(double cost) {
-        this.cost = cost;
     }
 
     public void getType() {
