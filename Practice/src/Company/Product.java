@@ -4,16 +4,18 @@ public class Product {
     protected String name;
     protected double price;
     protected String type;
+    protected double cost;
 
-    public Product(String name, double price, String type) {
+    public Product(String name, double price, String type, double cost) {
         this.name = name;
         this.price = price;
         this.type = type;
+        this.cost = cost;
     }
 
-    public double getProfit() {
-        return price - cost;
-    }
+//    public double getProfit() {
+//        return price - cost;
+//    }
 
     public double getPrice() {
         return price;

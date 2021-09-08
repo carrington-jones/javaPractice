@@ -4,8 +4,8 @@ public class Car extends Product{
     protected String make;
     protected String model;
 
-    public Car(String name, double price, String type, String make, String model) {
-        super(name, price, type);
+    public Car(String name, double price, String type, double cost, String make, String model) {
+        super(name, price, type, cost);
         this.make = make;
         this.model = model;
     }

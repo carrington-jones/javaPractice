@@ -3,8 +3,8 @@ package Company;
 public class Subscription extends Product{
     public String subscriptionType;
 
-    public Subscription(double price, String name, double cost, String type, String subscriptionType) {
-        super(price, name, cost, type);
+    public Subscription(String name, double price, String type, double cost, String subscriptionType) {
+        super(name, price, type, cost);
         this.subscriptionType = subscriptionType;
     }
 
